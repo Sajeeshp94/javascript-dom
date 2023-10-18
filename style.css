@@ -1,0 +1,45 @@
+
+.btn-info:hover{
+    color: red;
+}
+form input:invalid{
+    border:solid 2px red;
+}
+form input:valid{
+    border:solid 2px rgba(2, 126, 2, 0.959);
+}
+p i:first-child{
+    color: blue;
+}
+input:focus{
+    background-color: yellow;
+}
+p:only-of-type{
+    background: orange;
+}
+p::first-letter{
+    color: #8A2BE2;
+}
+/* #animateDiv{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(108, 56, 250);
+    margin-top: 10px;
+} */
+
+
+#animateDiv{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation-name: ani;
+    animation-duration: 6s;
+    
+}
+@keyframes ani{
+    25% {background-color: yellow; left: 250px; top: 0px; border-radius: 50% 0 0 0 ;}
+    50% {background-color: blue; left: 250px; top: 250px; border-radius: 50% 50% 0 0 ;}
+    75% {background-color: red; left: 250px; top: 250px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: orange; left: 250px; top: 0px; border-radius:50% 50% 50% 50%;}
+}

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <form action="/about" method="post" id="contact-form" onsubmit="return validateContactForm()">
+        
+        <input type="text" name="fullName" placeholder="fullname" value="sajeesh" required> 
+        <input type="number" name="password" placeholder="password" min="4" value="123" required> 
+        <input type="text" name="gender" placeholder="gender " value="male" required>
+        <input type="text" name="number" placeholder="mobile number" value="0123456789" required>
+        <button>Submit</button>
+    </form>
+    <a href="#" class="btn-info">Click here for more info</a>
+    <p>There are many <i>variations</i> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+
+    <p id="p1">I'm paragraph 1</p>
+    <button onclick="changeTextColor()">Change text color</button>
+    <!-- <button onclick="hideElement()">Hide P</button>
+    <button onclick="showElement()">Show P</button> -->
+    <button id="hideP">hideP</button>
+    <button id="showP">showP</button><br>
+    <span></span><br>
+    <button class="btn" onclick="colorChange()">Click here</button>
+    <div id="animateDiv"></div>
+
+    <input type="text" id="fullName" onkeyup="getFullName()" >
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
